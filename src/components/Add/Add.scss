@@ -1,0 +1,31 @@
+
+.containerAdd{
+
+    h1 {
+        font: 1.2em 'Oswald', sans-serif;
+        font-size: 32px;
+    }
+
+    form {
+
+        input {
+            outline: none;
+            padding: .50em;
+            border: 0;
+            letter-spacing: 0;
+            background: #ECECEC;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+
+        button {
+            border: 0;
+            color: #fafafa;
+            background: #61b1e4;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: .50em;
+            cursor: pointer;
+        }
+    }
+}

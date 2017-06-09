@@ -1,0 +1,82 @@
+
+.list {
+    display: inline-block;
+    float: left;
+    font: 1.2em 'Oswald', sans-serif;
+    color: #fff;
+    text-align: left;
+    padding:  0;
+    margin: 15px 0 0 0;
+
+    li:nth-child(2n+1) {
+        background: #333333 10%;
+    }
+
+    li {
+        position: relative;
+        display: table;
+        padding: 1em;
+        margin-bottom: .125em;
+        table-layout: fixed;
+        width: 350px;
+        list-style: none;
+        text-transform: uppercase;
+        background: #333333;
+
+        button {
+            position: absolute;
+            width: 90px;
+            height: 30px;
+            font-size: 12px;
+            cursor: pointer;
+            text-transform: uppercase;
+            background: transparent;
+        }
+
+        span {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .btnStart, .btnReturn {
+            right: 15px;
+            bottom: 17px;
+        }
+
+        .btnStart, .btnReturn, .btnDelete {
+            transition: color ease .2s;
+        }
+
+        .btnStart {
+            border: solid thin #267257;
+            color: #267257;
+        }
+
+        .btnStart:hover {
+            background-color: #267257;
+            color:#333;
+        }
+
+        .btnReturn {
+            border: solid thin #C17000;
+            color: #C17000;
+        }
+
+        .btnReturn:hover {
+            background-color: #C17000;
+            color:#333;
+        }
+
+        .btnDelete {
+            right: 115px;
+            top: 14px;
+            border: solid thin #AA0039;
+            color: #AA0039;
+        }
+
+        .btnDelete:hover {
+            background-color: #AA0039;
+            color:#333;
+        }
+    }
+}

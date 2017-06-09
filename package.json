@@ -1,0 +1,55 @@
+{
+  "name": "boilerplate-typescript-react",
+  "version": "1.0.0",
+  "description": "Boilerplate for react in typescript ",
+  "keywords": [
+    "boilerplate",
+    "hmtl",
+    "typescript",
+    "react",
+    "webpack",
+    "hmr"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": {
+    "name": "Albert Cuartiella",
+    "email": "cuarti1992@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuarti/boilerplate-typescript-react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cuarti/boilerplate-typescript-react/issues"
+  },
+  "homepage": "https://github.com/cuarti/boilerplate-typescript-react#readme",
+  "dependencies": {
+    "@types/node": "^7.0.12",
+    "@types/react": "^15.0.20",
+    "@types/react-dom": "^0.14.23",
+    "@types/react-hot-loader": "^3.0.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
+    "babel": "^6.23.0",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "css-loader": "^0.28.4",
+    "node-sass": "^4.5.3",
+    "react-hot-loader": "^3.0.0-beta.6",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.2",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1",
+    "webpack": "^2.3.2",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

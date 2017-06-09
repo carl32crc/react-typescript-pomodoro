@@ -1,0 +1,17 @@
+
+.containerApp {
+    padding: 0 20px;
+
+    div:nth-child(2){
+        font: 1.2em/1.4 'Oswald', sans-serif;
+        position: fixed;
+        top: 175px;
+        left: 500px;
+    }
+
+    div:nth-of-type(3) {
+        position: relative;
+        padding-right: 70px;
+        float: right;
+    }
+}
