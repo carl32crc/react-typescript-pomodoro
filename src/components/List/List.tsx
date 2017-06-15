@@ -1,16 +1,20 @@
 
 import * as React from 'react';
 import {Component} from 'react';
+
 import {Task} from '../../models/Task';
+
 const style = require('./List.scss');
+
 
 export interface ListProps {
     finished?: boolean;
     onChange?: any;
     tasks: Task[];
-    taskStart?: any;
+    start?: any;
     returnTask?: any;
     deleteTask?: any;
+    task?: any;
 }
 
 export class List extends Component<ListProps,{}> {
@@ -19,8 +23,7 @@ export class List extends Component<ListProps,{}> {
         super(props, context);
     }
 
-    public render(){
-
+    public render(): JSX.Element {
         return (
             <ul className={style.list} >
 
@@ -28,7 +31,7 @@ export class List extends Component<ListProps,{}> {
                         <li key={t.id} >
                             <span>{t.name}</span>
 
-                        {!t.finished && !this.props.taskStart ? <button className={style.btnStart} onClick={() =>
+                        {!t.finished && !this.props.start && !this.props.task ? <button className={style.btnStart} onClick={() =>
                             this.props.onChange(t.id)}>Start Task</button> : null}
 
                         {t.finished ? <button className={style.btnReturn} onClick={() =>
@@ -41,4 +44,5 @@ export class List extends Component<ListProps,{}> {
             </ul>
         );
     }
+
 }

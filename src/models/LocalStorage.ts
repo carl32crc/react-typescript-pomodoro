@@ -1,10 +1,10 @@
 
-import {Task} from '../models/Task';
+import {Task} from './Task';
 import {GenerateId} from './GenerateId';
 
 export class LocalStorage {
 
-    private generateId:GenerateId = new GenerateId;
+    private generateId: GenerateId = new GenerateId;
 
     private initialTask: Task[] = [{
         name: 'Sample Task',

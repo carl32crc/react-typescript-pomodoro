@@ -14,16 +14,18 @@ export interface AddProps {
 
 export class Add extends Component<AddProps, AddState> {
 
-    private generateId:GenerateId = new GenerateId;
+    private generateId: GenerateId = new GenerateId;
 
-    constructor(props) {
+    public constructor(props) {
         super(props);
+
+        this.state = {text: ''};
+
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.state = {text: ''};
     }
 
-    public handleChange(e) {
+    public handleChange(e): void {
         this.setState({text: e.target.value});
     }
 
@@ -40,7 +42,7 @@ export class Add extends Component<AddProps, AddState> {
     }
 
 
-    render() {
+    public render(): JSX.Element {
         return (
             <div className={style.containerAdd}>
 
